@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zeffou.github.io/arten-web/sitemap.xml
