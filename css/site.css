@@ -395,6 +395,7 @@ main {
   min-height: clamp(420px, 70vh, 640px);
   display: flex;
   align-items: flex-end;
+  justify-content: flex-start;
   overflow: hidden;
 }
 
@@ -413,10 +414,11 @@ main {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to top,
-    rgba(26, 48, 33, 0.75) 0%,
-    rgba(26, 48, 33, 0.2) 50%,
-    rgba(247, 244, 237, 0.3) 100%
+    105deg,
+    rgba(26, 48, 33, 0.82) 0%,
+    rgba(26, 48, 33, 0.45) 42%,
+    rgba(26, 48, 33, 0.08) 72%,
+    rgba(247, 244, 237, 0.15) 100%
   );
 }
 
@@ -424,8 +426,16 @@ main {
   position: relative;
   z-index: 1;
   padding: 3rem 0 4rem;
-  max-width: 540px;
+  width: min(100% - 2rem, var(--max-wide));
+  max-width: var(--max-wide);
+  margin-left: max(1rem, calc((100vw - min(100vw - 2rem, var(--max-wide))) / 2));
+  margin-right: auto;
+  text-align: left;
   color: var(--color-text-inverse);
+}
+
+.hero__content > * {
+  max-width: 540px;
 }
 
 .hero__content .eyebrow {
