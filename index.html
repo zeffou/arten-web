@@ -19,14 +19,14 @@
   <meta property="og:title" content="ARTEN — Upptäck svensk natur">
   <meta property="og:description" content="Skanna, samla och utforska arter i den svenska naturen med ARTEN för iPhone.">
   <meta property="og:url" content="https://zeffou.github.io/arten-web/">
-  <meta property="og:image" content="https://zeffou.github.io/arten-web/assets/og-image.svg">
+  <meta property="og:image" content="https://zeffou.github.io/arten-web/assets/og-image.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="ARTEN — upptäck svensk natur">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ARTEN — Upptäck svensk natur">
   <meta name="twitter:description" content="Skanna, samla och utforska arter i den svenska naturen med ARTEN för iPhone.">
-  <meta name="twitter:image" content="https://zeffou.github.io/arten-web/assets/og-image.svg">
+  <meta name="twitter:image" content="https://zeffou.github.io/arten-web/assets/og-image.webp">
   <link rel="stylesheet" href="css/site.css">
   <script type="application/ld+json">
   {
@@ -99,7 +99,10 @@
   <main id="main">
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__media">
-        <img src="assets/placeholder-hero.svg" alt="" width="1440" height="720" fetchpriority="high">
+        <picture>
+          <source srcset="assets/hero-home.webp" type="image/webp">
+          <img src="assets/placeholder-hero.svg" alt="" width="1440" height="720" fetchpriority="high">
+        </picture>
       </div>
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="container hero__content">
@@ -119,7 +122,10 @@
         <div class="card-grid card-grid--3">
           <article class="feature-card">
             <div class="feature-card__image">
-              <img src="assets/placeholder-scan.svg" alt="Skanna växter och djur" width="640" height="400" loading="lazy">
+              <picture>
+                <source srcset="assets/feature-scan.webp" type="image/webp">
+                <img src="assets/placeholder-scan.svg" alt="Skanna växter och djur" width="640" height="400" loading="lazy">
+              </picture>
             </div>
             <div class="feature-card__body">
               <p class="feature-card__label">Skanna</p>
@@ -128,7 +134,10 @@
           </article>
           <article class="feature-card">
             <div class="feature-card__image">
-              <img src="assets/placeholder-collect.svg" alt="Samla arter i BioDex" width="640" height="400" loading="lazy">
+              <picture>
+                <source srcset="assets/feature-collect.webp" type="image/webp">
+                <img src="assets/placeholder-collect.svg" alt="Samla arter i BioDex" width="640" height="400" loading="lazy">
+              </picture>
             </div>
             <div class="feature-card__body">
               <p class="feature-card__label">Samla</p>
@@ -137,7 +146,10 @@
           </article>
           <article class="feature-card">
             <div class="feature-card__image">
-              <img src="assets/placeholder-explore.svg" alt="Utforska karta och observationer" width="640" height="400" loading="lazy">
+              <picture>
+                <source srcset="assets/feature-explore.webp" type="image/webp">
+                <img src="assets/placeholder-explore.svg" alt="Utforska karta och observationer" width="640" height="400" loading="lazy">
+              </picture>
             </div>
             <div class="feature-card__body">
               <p class="feature-card__label">Utforska</p>
