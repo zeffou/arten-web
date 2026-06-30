@@ -22,4 +22,4 @@ python3 -m http.server 8080
 
 ## Placeholders
 
-Ersätt `[FÖRETAGSNAMN]`, `[ORG.NR]`, `[POSTADRESS]`, `[KONTAKT-EPOST]` och `[WEBBDOMÄN]` innan App Store-publicering.
+Uppdatera `kontakt@arten.app` när du har e-post kopplad till domänen.

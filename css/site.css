@@ -910,3 +910,26 @@ main {
   content: " ↗";
   font-size: 0.75em;
 }
+
+.link-plain {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.link-plain:hover {
+  color: var(--color-text-muted);
+}
+
+.contact-card__link {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.contact-card__link:hover {
+  color: var(--color-text-muted);
+}
