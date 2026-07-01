@@ -626,39 +626,28 @@ main {
 
 .app-callout {
   padding: 4rem 0 3rem;
+  text-align: left;
 }
 
-.app-callout__card {
-  padding: 2.75rem 2.25rem 2rem;
-  border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.62);
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
-  border: 1px solid rgba(255, 255, 255, 0.58);
-  box-shadow:
-    var(--shadow-md),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.28);
-}
-
-.app-callout__card .eyebrow {
+.app-callout .eyebrow {
   color: var(--color-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .app-callout__title {
   font-family: var(--font-display);
-  font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.2;
-  margin-bottom: 0.875rem;
-  max-width: 24ch;
+  margin-bottom: 1rem;
+  max-width: 28ch;
 }
 
 .app-callout__text {
   margin: 0;
-  max-width: 58ch;
-  font-size: 1rem;
+  max-width: 62ch;
+  font-size: 1.0625rem;
   line-height: 1.65;
   color: var(--color-text-muted);
 }
