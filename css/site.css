@@ -1,13 +1,14 @@
 :root {
-  --color-bg: #f7f4ed;
+  /* Match app shell (hsl 0 0% 97.6%) */
+  --color-bg: #f9f9f9;
   --color-bg-elevated: #ffffff;
-  --color-bg-muted: #ede8dc;
+  --color-bg-muted: #f3f4f6;
   --color-bg-dark: #1a3021;
   --color-primary: #388b6c;
-  --color-primary-dark: #1a3021;
+  --color-primary-dark: #2f7358;
   --color-text: #171717;
   --color-text-muted: #5c5c56;
-  --color-text-inverse: #fafaf8;
+  --color-text-inverse: #ffffff;
   --color-border: rgba(26, 48, 33, 0.12);
   --color-border-strong: rgba(26, 48, 33, 0.2);
   --shadow-sm: 0 1px 2px rgba(26, 48, 33, 0.06);
@@ -53,7 +54,7 @@ body {
   font-size: 1.0625rem;
   line-height: 1.65;
   color: var(--color-text);
-  background: linear-gradient(180deg, var(--color-bg) 0%, #f2ede3 100%);
+  background: var(--color-bg);
   min-height: 100dvh;
 }
 
@@ -67,6 +68,11 @@ a {
   color: var(--color-primary);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.15em;
+}
+
+a.btn--primary,
+a.btn--primary:hover {
+  color: #ffffff;
 }
 
 a:hover {
@@ -164,7 +170,7 @@ ol {
   padding: 0.5rem 1.5rem 0.5rem 1.375rem;
   min-height: 52px;
   border-radius: var(--radius-full);
-  background: rgba(247, 244, 237, 0.48);
+  background: rgba(249, 249, 249, 0.48);
   backdrop-filter: blur(18px) saturate(160%);
   -webkit-backdrop-filter: blur(18px) saturate(160%);
   border: 1px solid rgba(255, 255, 255, 0.58);
@@ -233,6 +239,13 @@ ol {
 .site-header .btn--primary {
   padding: 0.55rem 1.125rem;
   font-size: 0.875rem;
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.site-header .btn--primary:hover {
+  background: var(--color-primary-dark);
+  color: #ffffff;
 }
 
 .btn {
@@ -264,13 +277,13 @@ ol {
 }
 
 .btn--primary {
-  background: var(--color-bg-dark);
-  color: var(--color-text-inverse);
+  background: var(--color-primary);
+  color: #ffffff;
 }
 
 .btn--primary:hover {
-  background: #243d2b;
-  color: var(--color-text-inverse);
+  background: var(--color-primary-dark);
+  color: #ffffff;
 }
 
 .btn--secondary {
@@ -358,7 +371,7 @@ ol {
   position: fixed;
   inset: 5.5rem 1rem 1rem;
   z-index: 40;
-  background: rgba(247, 244, 237, 0.92);
+  background: rgba(249, 249, 249, 0.92);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.45);
@@ -460,7 +473,7 @@ main {
     rgba(26, 48, 33, 0.82) 0%,
     rgba(26, 48, 33, 0.45) 42%,
     rgba(26, 48, 33, 0.08) 72%,
-    rgba(247, 244, 237, 0.15) 100%
+    rgba(249, 249, 249, 0.15) 100%
   );
 }
 
