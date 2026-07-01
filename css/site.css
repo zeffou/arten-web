@@ -486,6 +486,7 @@ main {
 
 .hero__content h1 {
   color: var(--color-text-inverse);
+  margin-top: 1.25rem;
 }
 
 .hero__content h1 em {
