@@ -186,8 +186,8 @@ ol {
 }
 
 .logo__mark {
-  width: 28px;
-  height: 32px;
+  width: 30px;
+  height: 34px;
   flex-shrink: 0;
   object-fit: contain;
   display: block;
@@ -621,11 +621,11 @@ main {
 }
 
 .section--muted:has(+ .app-callout) {
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .app-callout {
-  padding: 2.5rem 0;
+  padding: 4rem 0 3rem;
 }
 
 .app-callout__card {
