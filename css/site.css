@@ -620,7 +620,7 @@ main {
   height: 22px;
 }
 
-.section--muted:has(+ .app-callout) {
+.section:has(+ .app-callout) {
   padding-bottom: 4rem;
 }
 
